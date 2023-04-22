@@ -10,6 +10,9 @@
     <h1>Hola {{name}}</h1>
     <h3>Categorias</h3>
     <ul>
+        {% comment %}
+            en la parte inferior se hace un for para recorrer la lista de categorias
+        {% endcomment %}
         {%for category in categories%}
             {% if category == 'code' %}
                 <li><b>{{category}}</b></li>
@@ -17,6 +20,7 @@
                 <li>{{category}}</li>
             {% endif%}
         {% endfor%}
+        <h5>Total de categorias: {{categories|length}}</h5>
     </ul>
 </body>
 </html>
