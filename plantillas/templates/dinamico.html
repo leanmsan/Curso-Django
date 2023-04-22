@@ -9,6 +9,14 @@
 <body>
     <h1>Hola {{name}}</h1>
     <h3>Categorias</h3>
-    <p>{{categories}}</p>
+    <ul>
+        {%for category in categories%}
+            {% if category == 'code' %}
+                <li><b>{{category}}</b></li>
+            {% else%}
+                <li>{{category}}</li>
+            {% endif%}
+        {% endfor%}
+    </ul>
 </body>
 </html>
