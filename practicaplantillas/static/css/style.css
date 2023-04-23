@@ -1,0 +1,127 @@
+:root{
+    --color-primary : #ffce00;
+    --color-secondary: #ffa300;
+    --color-text: #707789;
+    --color-bg: #dedede;
+    --font-title: font;
+    --font-text: font-body;
+}
+
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: black;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--color-secondary);
+}
+
+nav img {
+    margin: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-bg);
+    font-size: 25px;
+    font-weight: 100;
+    font-family: var(--font-title);
+}   
+
+nav ul li a:hover {
+    color: white;
+}
+
+main {
+    background-color: var(--color-bg);
+}
+
+footer {
+    width: 100vw;
+    min-height: 150px;
+    background-color: var(--color-primary) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    color: var(--color-primary);
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 100;
+    color: var(--color-bg);
+    font-family: var(--font-title);
+}
+
+main {
+    background-color: var(--color-bg);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+footer img {
+    margin: 25px;
+}
+
+.about {
+    display: flex;
+}
+
+.about-content {
+    width: 350px;
+    padding: 25px;
+}
+
+.photos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: font;
+    src: url('../fonts/font.ttf');
+}
+
+
+@font-face {
+    font-family: font-body;
+    src: url('../fonts/font-body.ttf');
+}
