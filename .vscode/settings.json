@@ -1,3 +1,12 @@
 {
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "prueba",
+            "database": "${workspaceFolder:Curso-Django}/modularizacion/db.sqlite3"
+        }
+    ]
 }
