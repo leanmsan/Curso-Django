@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .forms import ComentarioFrom
+from .forms import ComentarioFrom, ContactForm
 
 def form(request):
     comentario_form = ComentarioFrom({'name': 'Leandro', 'url': 'http://www.instagram.com', 'comentario': 'Comentario'})
@@ -11,3 +11,7 @@ def goal(request):
         return HttpResponse("Metodo no permitido")
     
     return HttpResponse(request.POST['name'])
+
+def widget (request):
+    form = ContactForm()
+    return render(request, 'widget.html', {'form': form})
