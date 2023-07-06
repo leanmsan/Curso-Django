@@ -1,0 +1,67 @@
+:root {
+    --color-primary: #08032c;
+    --color-secundary: white;
+    --color-text: #08032c;
+    --font-main: Cafe;
+    --font-text: Cafe-Light;
+}
+
+/* Main settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+@font-face {
+    font-family: Cafe;
+    src: url('../fonts/Cafe.ttf')
+}
+
+@font-face {
+    font-family: Cafe-Light;
+    src: url('../fonts/Cafe-Light.ttf')
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+}
+
+/* End main settings */
+
+/*layout settings */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--color-primary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+nav ul li a {
+    text-decoration:  none;
+    color: white;
+    font-family: var(--font-main);
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    margin: 50px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* End layout settings */
